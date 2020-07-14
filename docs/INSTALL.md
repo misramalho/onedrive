@@ -147,6 +147,35 @@ For notifications the following is also necessary:
 sudo apt install libnotify-dev
 ```
 
+### Dependencies: 19.3 Tricia - x86_64
+```
+
+First install development dependencies as per below:
+```text
+sudo apt install build-essential
+sudo apt install libcurl4-openssl-dev
+sudo apt install libsqlite3-dev
+sudo apt install pkg-config (already installed)
+sudo apt install git
+sudo apt install curl (already installed)
+```
+For notifications the following is also necessary:
+```text
+sudo apt install libnotify-dev
+```
+Second, install the DMD compiler as per below:
+```text
+curl -fsS https://dlang.org/install.sh | bash -s dmd
+
+
+ignore the error "gpg: Fatal: can't open '/home/username/.gnupg/trustdb.gpg': Permission denied
+Broken GPG installation"
+
+
+go to https://dlang.org/download.html and install DMD X86_64
+```
+
+
 ### Dependencies: CentOS 6.x / RHEL 6.x
 ```text
 sudo yum groupinstall 'Development Tools'
